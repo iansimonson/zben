@@ -1,13 +1,11 @@
-zben
+bencode-zig
 ======
 Zig Bencode Parser
 ---------
 
 Super basic Bencode parsing into a bencode Value which could be a Integer, String, List, or Dictionary.
 
-There are probably better ways to structure the lexer/parser given it gives up quickly. Maybe some states could collapse together, or the tagged union could be working against me.
-
-There are a couple happy path tests but that's about it.
+Got the decoding done only to find zig bencode encoding/decoding libraries exist :) so will probably abandon this now.
 
 ### Example Usage
 ```
