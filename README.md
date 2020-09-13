@@ -1,4 +1,4 @@
-bencode-zig
+zben
 ======
 Zig Bencode Parser
 ---------
