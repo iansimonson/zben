@@ -2,8 +2,10 @@ const Builder = @import("std").build.Builder;
 
 pub fn build(b: *Builder) void {
     const mode = b.standardReleaseOptions();
+    const target = b.standardTargetOptions(.{});
     const lib = b.addStaticLibrary("zben", "src/main.zig");
     lib.setBuildMode(mode);
+    lib.setTarget(target);
     lib.install();
 
     var main_tests = b.addTest("src/main.zig");
